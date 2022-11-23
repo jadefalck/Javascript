@@ -1,0 +1,100 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh; /*height from top of the page*/
+    display: flex; 
+    background: #060AB2;
+    
+  }
+  
+  .memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+   
+  }
+  .memory-card:active {
+      transform: scale(0.97);
+      transition: transform .2s;
+    }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+   
+  }
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+
+
+  /*.flippingcard {
+    position: relative;
+    display: inline-block;
+}*/
+ 
+  /*button {
+    background-color: #c98f24;
+    z-index: 10;
+    cursor: pointer;
+}*/
+
+/*div[class^="card"] {
+    height: 300px;
+    width: 200px;
+    perspective-origin: center bottom;
+    position: relative;
+}
+div[class^="card"] [class^="face"] {*/
+    /* Dans ce cas, il faut laisser un espace entre les deux sélecteurs d'attributs ([class^="card"] et [class^="face"]) */
+    /*ATTENTION: L'option TidyUp de JsFiddle va automatiquement enlever l'espace entre les deux sélecteurs d'attributs*/
+    /*height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition-duration: 0.5s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+div[class^="card"] .face-front {
+    
+    z-index: 5;
+}
+div[class^="card"] .face-back {
+  
+    z-index: 0;
+    transform: rotateY(-180deg);
+}
+div[class^="card"].rotated .face-front {
+    z-index: 5;
+    transform: rotateY(180deg);
+}
+div[class^="card"].rotated .face-back {
+    z-index: 10;
+    transform: rotateY(0deg);
+}*/
