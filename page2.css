@@ -1,0 +1,18 @@
+body{
+    background-image: url(-drapeau-bulgarie.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+    
+
+
+
+
+
+
+
+h1{color:rgb(44, 236, 140)}
+h2{color:rgb(202, 37, 37)}
+h3{background-color:rgb(55, 202, 221)}
+p1{color:rgb(0, 0, 0);font-size: 22px}
